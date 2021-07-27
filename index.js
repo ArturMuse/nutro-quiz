@@ -31,11 +31,13 @@ const quizQuestion = document.querySelector(".js-quiz-q")
 const quizNum = document.querySelector(".js-quiz-current")
 const quizBody = document.querySelector(".js-quiz-body")
 const quizResult = document.querySelector(".js-quiz-result")
+const quizResultCode = document.querySelector(".js-result-code")
 
 let stage = 0
 let btnStage = 0
 let data = null
-
+const resData = { "error": 0, "result": { "code": "AHUC" } }
+console.log(resData.result.code)
 // ОТПЕЧАТОК
 
 
@@ -65,7 +67,7 @@ const connect = async () => {
             }
         });
         const json = await response.json();
-        console.log('Успех:', JSON.stringify(json));
+        quizResultCode.innerHTML = `${JSON.stringify(json).result.code}`
     } catch (error) {
         console.error('Ошибка:', error);
     }
@@ -123,5 +125,4 @@ quizBtn.addEventListener("click", () => {
         quizBtn.innerHTML = "Ответить"
         btnStage = 0
     }
-    console.log(stage)
 })
