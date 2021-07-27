@@ -60,7 +60,7 @@
         margin-right: auto;
         padding: 45px 123px 95px 123px;
         background: #f2f2f2;
-        display: grid;
+        display: none;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 45px;
         position: relative;
@@ -204,7 +204,8 @@
         opacity: 1;
     }
 
-    &__btn-sub {
+    &__btn-sub,
+    &__btn {
         background-color: #000000;
         font-weight: bold;
         font-size: 16px;
@@ -225,6 +226,191 @@
         left: calc(50% - 155px);
     }
 
+    &__btn {
+        position: static;
+    }
+
+    &__popup {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background-color: #ffffff;
+        z-index: 10;
+        padding-bottom: 100px;
+    }
+
     &__body {
+        max-width: 960px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    &__nums {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: 0.2em;
+        color: #bdbdbd;
+    }
+
+    &__nums-current {
+        color: #000000;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    &__question {
+        max-width: 740px;
+        margin: auto;
+        margin-top: 3px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #000000;
+        margin-bottom: 25px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__box-item {
+        width: 216px;
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        &-text {
+            width: 100%;
+            max-width: 580px;
+            margin: auto;
+            display: flex;
+            cursor: pointer;
+            margin-bottom: 20px;
+            border: none !important;
+            background: none !important;
+            &-c {
+                background: #ffffff;
+                border: 1px solid #000000;
+                display: block;
+                width: 21px;
+                min-width: 21px;
+                height: 21px;
+                border-radius: 100px;
+                margin-top: 2px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 20px;
+            }
+        }
+        &-sel,
+        &:hover {
+            border: 1px solid #5f6369;
+        }
+        &-y {
+            background: #e7faeb;
+            border: 1px solid #ccedd3;
+        }
+        &-n {
+            background: #eb001b;
+            border: 1px solid #eb001b;
+        }
+        &-sel &-text-c {
+            &::before {
+                content: "";
+                width: 9px;
+                height: 9px;
+                display: block;
+                background: #000000;
+                border-radius: 100px;
+            }
+        }
+        &-y &-text-c {
+            background: #e7faeb;
+        }
+        &-off {
+            display: none;
+        }
+    }
+
+    &__box-item-pic {
+        width: 193px;
+        height: 174px;
+        display: block;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__box-item-p {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #000000;
+        margin-top: 18px;
+    }
+
+    &__btn {
+        margin: auto;
+        margin-top: 37px;
+    }
+    &__result {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background: url("img/back.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 11;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: none;
+        &-on {
+            display: flex;
+        }
+        svg {
+            margin-bottom: auto;
+            margin-top: 27px;
+        }
+        &-title {
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        &-subtitle {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: 0.01em;
+            max-width: 900px;
+            color: #ffffff;
+            margin-bottom: 100px;
+        }
     }
 }
