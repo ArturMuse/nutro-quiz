@@ -13,34 +13,9 @@ quizBtnSubmit.addEventListener("click", (e) => {
     quizForm.style.display = "none"
 })
 
-
-// QUIZ
-const config = {
-    q: [
-        "Рационы NUTRO™ изготовлены без добавления:",
-        "Все рационы NUTRO™   разработаны в соответствии с философией FEED CLEAN™?В чем особенности этой филосовии?",
-        "Какие специализированные рационы есть в линейке NUTRO  ™ Grain Free?(выберите несколько вариантов ответов):"
-    ]
-}
-
-
-
-const quizItems = document.querySelectorAll(".js-quiz-box-item")
-const quizBtn = document.querySelector(".js-quiz-btn")
-const quizQuestion = document.querySelector(".js-quiz-q")
-const quizNum = document.querySelector(".js-quiz-current")
-const quizBody = document.querySelector(".js-quiz-body")
-const quizResult = document.querySelector(".js-quiz-result")
-const quizResultCode = document.querySelector(".js-result-code")
-
-let stage = 0
-let btnStage = 0
-let data = null
-const resData = { "error": 0, "result": { "code": "AHUC" } }
-console.log(resData.result.code)
 // ОТПЕЧАТОК
 
-
+let data = null
 
 function initFingerprintJS() {
     // Initialize an agent at application startup.
@@ -52,7 +27,6 @@ function initFingerprintJS() {
         .then(result => {
             const visitorId = result.visitorId
             data = { "key": visitorId };
-            console.log(data)
         })
 }
 
@@ -77,6 +51,27 @@ const connect = async () => {
     }
 }
 
+
+// QUIZ
+const config = {
+    q: [
+        "Рационы NUTRO™ изготовлены без добавления:",
+        "Все рационы NUTRO™   разработаны в соответствии с философией FEED CLEAN™?В чем особенности этой филосовии?",
+        "Какие специализированные рационы есть в линейке NUTRO  ™ Grain Free?(выберите несколько вариантов ответов):"
+    ]
+}
+const quizItems = document.querySelectorAll(".js-quiz-box-item")
+const quizBtn = document.querySelector(".js-quiz-btn")
+const quizQuestion = document.querySelector(".js-quiz-q")
+const quizNum = document.querySelector(".js-quiz-current")
+const quizBody = document.querySelector(".js-quiz-body")
+const quizResult = document.querySelector(".js-quiz-result")
+const quizResultCode = document.querySelector(".js-result-code")
+
+let stage = 0
+let btnStage = 0
+let checkStatus = false
+
 quizQuestion.innerHTML = `${config.q[0]}`
 
 quizItems.forEach((el, index) => {
@@ -84,23 +79,39 @@ quizItems.forEach((el, index) => {
         el.classList.add("quiz__box-item-off")
     }
     el.addEventListener("click", () => {
-        quizItems.forEach(i => i.classList.remove("quiz__box-item-sel"))
+        if (index < 7) {
+            quizItems.forEach(i => i.classList.remove("quiz__box-item-sel"))
+        }
         el.classList.toggle("quiz__box-item-sel")
     })
 })
 
 quizBtn.addEventListener("click", () => {
     if (btnStage === 0) {
-        quizBtn.innerHTML = "Дальше"
-        quizItems.forEach(el => {
-            if (el.classList.contains("quiz__box-item-sel")) {
-                if (el.dataset.rule === "true") {
-                    el.classList.add("quiz__box-item-y")
-                } else {
-                    el.classList.add("quiz__box-item-n")
+        if (stage === 2) {
+            quizItems.forEach(el => {
+                if (el.classList.contains("quiz__box-item-sel")) {
+                    if (el.dataset.rule === "true") {
+                        el.classList.add("quiz__box-item-y")
+                    } else {
+                        el.classList.add("quiz__box-item-n")
+                    }
+                    el.style.pointerEvents = "none"
                 }
-            }
-        })
+            })
+        } else {
+            quizItems.forEach(el => {
+                if (el.classList.contains("quiz__box-item-sel")) {
+                    if (el.dataset.rule === "true") {
+                        el.classList.add("quiz__box-item-y")
+                    } else {
+                        el.classList.add("quiz__box-item-n")
+                    }
+                }
+                el.style.pointerEvents = "none"
+            })
+        }
+        quizBtn.innerHTML = "Дальше"
         btnStage = 1
         stage += 1
     } else {
@@ -126,6 +137,7 @@ quizBtn.addEventListener("click", () => {
             quizResult.classList.add("quiz__result-on")
             connect()
         }
+        quizItems.forEach(el => el.style.pointerEvents = "auto")
         quizBtn.innerHTML = "Ответить"
         btnStage = 0
     }

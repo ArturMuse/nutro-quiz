@@ -323,11 +323,12 @@
         }
         &-y {
             background: #e7faeb;
-            border: 1px solid #ccedd3;
         }
         &-n {
-            background: #eb001b;
-            border: 1px solid #eb001b;
+            background: #b40a1b;
+        }
+        &-n &-p {
+            color: #fff;
         }
         &-sel &-text-c {
             &::before {
@@ -342,14 +343,19 @@
         &-y &-text-c {
             background: #e7faeb;
         }
+        &-n &-text-c {
+            background: #b40a1b;
+        }
         &-off {
             display: none;
         }
     }
 
     &__box-item-pic {
-        width: 193px;
-        height: 174px;
+        width: 100%;
+        height: auto;
+        max-height: 174px;
+
         display: block;
         img {
             display: block;
@@ -411,6 +417,58 @@
             max-width: 900px;
             color: #ffffff;
             margin-bottom: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .quiz {
+        &__popup {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &__body {
+            max-width: 440px;
+        }
+        &__title {
+            margin-bottom: 10px;
+        }
+        &__result {
+            padding-left: 20px;
+            padding-right: 20px;
+            &-title {
+                font-size: 40px;
+                line-height: 45px;
+            }
+            &-subtitle {
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .quiz {
+        &__btn {
+            width: 100%;
+        }
+        &__box {
+            &-item {
+                width: 50%;
+            }
+        }
+        &__result {
+            padding-left: 20px;
+            padding-right: 20px;
+            &-title {
+                font-size: 40px;
+                line-height: 45px;
+            }
+            &-subtitle {
+                font-size: 25px;
+                line-height: 35px;
+            }
         }
     }
 }
