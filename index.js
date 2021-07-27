@@ -55,7 +55,7 @@ function initFingerprintJS() {
 }
 
 const connect = async () => {
-    const url = 'http://nutro.tw1.ru/api/request';
+    const url = 'https://nutro.tw1.ru/api/request';
     try {
         const response = await fetch(url, {
             method: 'POST',
