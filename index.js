@@ -67,7 +67,9 @@ const connect = async () => {
             }
         });
         const json = await response.json();
-        quizResultCode.innerHTML = `${JSON.stringify(json).result.code}`
+        const resData = JSON.stringify(json);
+        console.log(resData)
+        // quizResultCode.innerHTML = `${JSON.stringify(json).result.code}`
     } catch (error) {
         console.error('Ошибка:', error);
     }
