@@ -67,10 +67,13 @@ const connect = async () => {
             }
         });
         const json = await response.json();
-        console.log(json)
-        // quizResultCode.innerHTML = `${JSON.stringify(json).result.code}`
+
+        quizResultCode.innerHTML = `Покажи этот код ${json.result.code} на стойке NUTRO
+            и получите свой подарок!`
+
     } catch (error) {
         console.error('Ошибка:', error);
+        quizResultCode.innerHTML = `Упс! Код уже использован.`
     }
 }
 
