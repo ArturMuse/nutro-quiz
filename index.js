@@ -49,7 +49,7 @@ function initFingerprintJS() {
         .then(fp => fp.get())
         .then(result => {
             const visitorId = result.visitorId
-            const data = { key: visitorId };
+            data = { "key": visitorId };
             console.log(data)
         })
 }
