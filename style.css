@@ -1,0 +1,458 @@
+@font-face {
+  font-family: "Futura PT";
+  src: url("./fonts/FuturaPT/FuturaPT-Heavy.eot");
+  src: local("Futura PT Heavy"), local("FuturaPT-Heavy"), url("./fonts/FuturaPT/FuturaPT-Heavy.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPT-Heavy.woff") format("woff"), url("./fonts/FuturaPT/FuturaPT-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("./fonts/FuturaPT/FuturaPT-Medium.eot");
+  src: local("Futura PT Medium"), local("FuturaPT-Medium"), url("./fonts/FuturaPT/FuturaPT-Medium.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPT-Medium.woff") format("woff"), url("./fonts/FuturaPT/FuturaPT-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("./fonts/FuturaPT/FuturaPT-MediumObl.eot");
+  src: local("Futura PT Medium Oblique"), local("FuturaPT-MediumObl"), url("./fonts/FuturaPT/FuturaPT-MediumObl.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPT-MediumObl.woff") format("woff"), url("./fonts/FuturaPT/FuturaPT-MediumObl.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura PT Cond";
+  src: url("./fonts/FuturaPT/FuturaPTCond-Medium.eot");
+  src: local("Futura PT Cond Medium"), local("FuturaPTCond-Medium"), url("./fonts/FuturaPT/FuturaPTCond-Medium.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPTCond-Medium.woff") format("woff"), url("./fonts/FuturaPT/FuturaPTCond-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("./fonts/FuturaPT/FuturaPT-LightObl.eot");
+  src: local("Futura PT Light Oblique"), local("FuturaPT-LightObl"), url("./fonts/FuturaPT/FuturaPT-LightObl.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPT-LightObl.woff") format("woff"), url("./fonts/FuturaPT/FuturaPT-LightObl.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura PT Book";
+  src: url("./fonts/FuturaPT/FuturaPT-Book.eot");
+  src: local("Futura PT Book"), local("FuturaPT-Book"), url("./fonts/FuturaPT/FuturaPT-Book.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPT-Book.woff") format("woff"), url("./fonts/FuturaPT/FuturaPT-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT Cond";
+  src: url("./fonts/FuturaPT/FuturaPTCond-Bold.eot");
+  src: local("Futura PT Cond Bold"), local("FuturaPTCond-Bold"), url("./fonts/FuturaPT/FuturaPTCond-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPTCond-Bold.woff") format("woff"), url("./fonts/FuturaPT/FuturaPTCond-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT Book";
+  src: url("./fonts/FuturaPT/FuturaPT-BookObl.eot");
+  src: local("Futura PT Book Oblique"), local("FuturaPT-BookObl"), url("./fonts/FuturaPT/FuturaPT-BookObl.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPT-BookObl.woff") format("woff"), url("./fonts/FuturaPT/FuturaPT-BookObl.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura PT Cond Extra";
+  src: url("./fonts/FuturaPT/FuturaPTCond-ExtraBoldObl.eot");
+  src: local("Futura PT Cond Extra Bold Oblique"), local("FuturaPTCond-ExtraBoldObl"), url("./fonts/FuturaPT/FuturaPTCond-ExtraBoldObl.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPTCond-ExtraBoldObl.woff") format("woff"), url("./fonts/FuturaPT/FuturaPTCond-ExtraBoldObl.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("./fonts/FuturaPT/FuturaPT-Light.eot");
+  src: local("Futura PT Light"), local("FuturaPT-Light"), url("./fonts/FuturaPT/FuturaPT-Light.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPT-Light.woff") format("woff"), url("./fonts/FuturaPT/FuturaPT-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("./fonts/FuturaPT/FuturaPT-BoldObl.eot");
+  src: local("Futura PT Bold Oblique"), local("FuturaPT-BoldObl"), url("./fonts/FuturaPT/FuturaPT-BoldObl.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPT-BoldObl.woff") format("woff"), url("./fonts/FuturaPT/FuturaPT-BoldObl.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura PT Demi";
+  src: url("./fonts/FuturaPT/FuturaPT-DemiObl.eot");
+  src: local("Futura PT Demi Oblique"), local("FuturaPT-DemiObl"), url("./fonts/FuturaPT/FuturaPT-DemiObl.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPT-DemiObl.woff") format("woff"), url("./fonts/FuturaPT/FuturaPT-DemiObl.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura PT Cond Extra";
+  src: url("./fonts/FuturaPT/FuturaPTCond-ExtraBold.eot");
+  src: local("Futura PT Cond Extra Bold"), local("FuturaPTCond-ExtraBold"), url("./fonts/FuturaPT/FuturaPTCond-ExtraBold.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPTCond-ExtraBold.woff") format("woff"), url("./fonts/FuturaPT/FuturaPTCond-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT Demi";
+  src: url("./fonts/FuturaPT/FuturaPT-Demi.eot");
+  src: local("Futura PT Demi"), local("FuturaPT-Demi"), url("./fonts/FuturaPT/FuturaPT-Demi.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPT-Demi.woff") format("woff"), url("./fonts/FuturaPT/FuturaPT-Demi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("./fonts/FuturaPT/FuturaPT-HeavyObl.eot");
+  src: local("Futura PT Heavy Oblique"), local("FuturaPT-HeavyObl"), url("./fonts/FuturaPT/FuturaPT-HeavyObl.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPT-HeavyObl.woff") format("woff"), url("./fonts/FuturaPT/FuturaPT-HeavyObl.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura PT Extra";
+  src: url("./fonts/FuturaPT/FuturaPT-ExtraBoldObl.eot");
+  src: local("Futura PT Extra Bold Oblique"), local("FuturaPT-ExtraBoldObl"), url("./fonts/FuturaPT/FuturaPT-ExtraBoldObl.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPT-ExtraBoldObl.woff") format("woff"), url("./fonts/FuturaPT/FuturaPT-ExtraBoldObl.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura PT Cond Book";
+  src: url("./fonts/FuturaPT/FuturaPTCond-Book.eot");
+  src: local("Futura PT Cond Book"), local("FuturaPTCond-Book"), url("./fonts/FuturaPT/FuturaPTCond-Book.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPTCond-Book.woff") format("woff"), url("./fonts/FuturaPT/FuturaPTCond-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("./fonts/FuturaPT/FuturaPT-Bold.eot");
+  src: local("Futura PT Bold"), local("FuturaPT-Bold"), url("./fonts/FuturaPT/FuturaPT-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPT-Bold.woff") format("woff"), url("./fonts/FuturaPT/FuturaPT-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT Extra";
+  src: url("./fonts/FuturaPT/FuturaPT-ExtraBold.eot");
+  src: local("Futura PT Extra Bold"), local("FuturaPT-ExtraBold"), url("./fonts/FuturaPT/FuturaPT-ExtraBold.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPT-ExtraBold.woff") format("woff"), url("./fonts/FuturaPT/FuturaPT-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT Cond";
+  src: url("./fonts/FuturaPT/FuturaPTCond-BoldObl.eot");
+  src: local("Futura PT Cond Bold Oblique"), local("FuturaPTCond-BoldObl"), url("./fonts/FuturaPT/FuturaPTCond-BoldObl.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPTCond-BoldObl.woff") format("woff"), url("./fonts/FuturaPT/FuturaPTCond-BoldObl.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura PT Cond";
+  src: url("./fonts/FuturaPT/FuturaPTCond-MediumObl.eot");
+  src: local("Futura PT Cond Medium Oblique"), local("FuturaPTCond-MediumObl"), url("./fonts/FuturaPT/FuturaPTCond-MediumObl.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPTCond-MediumObl.woff") format("woff"), url("./fonts/FuturaPT/FuturaPTCond-MediumObl.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura PT Cond Book";
+  src: url("./fonts/FuturaPT/FuturaPTCond-BookObl.eot");
+  src: local("Futura PT Cond Book Oblique"), local("FuturaPTCond-BookObl"), url("./fonts/FuturaPT/FuturaPTCond-BookObl.eot?#iefix") format("embedded-opentype"), url("./fonts/FuturaPT/FuturaPTCond-BookObl.woff") format("woff"), url("./fonts/FuturaPT/FuturaPTCond-BookObl.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+.quiz {
+  max-width: 1125px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.quiz *,
+.quiz *::before,
+.quiz *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Futura PT", sans-serif;
+  outline: none;
+}
+
+.quiz__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-bottom: 68px;
+}
+
+.quiz__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+.quiz__list-item {
+  text-align: center;
+  max-width: 427px;
+  width: 100%;
+}
+
+.quiz__list-num {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 40px;
+  letter-spacing: 0.32em;
+  color: #000000;
+  margin-bottom: 28px;
+  padding-left: 20px;
+}
+
+.quiz__list-text {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.quiz__form {
+  margin-top: 50px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 45px 123px 95px 123px;
+  background: #f2f2f2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 45px;
+  position: relative;
+}
+
+.quiz__label-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.quiz__label-text span {
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 28px;
+  color: #9e9e9e;
+  margin-bottom: 2px;
+}
+
+.quiz__input-text {
+  background-color: transparent;
+  border: none;
+  font-weight: 300;
+  border-bottom: 1px solid #000000;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  padding-bottom: 8px;
+}
+
+.quiz__pet-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.quiz__pet-input-checkbox {
+  display: none;
+}
+
+.quiz__pet-text {
+  font-family: "Futura PT Book", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.quiz__pet-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.quiz__pet-label span {
+  cursor: pointer;
+  display: block;
+  width: 82.57px;
+  height: 34.25px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.quiz__pet-label span::before {
+  content: "";
+  width: 42.9px;
+  height: 34.25px;
+  display: block;
+  background: #000000;
+  border-radius: 30px;
+  left: 0px;
+  top: -1px;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.quiz__pet-input-checkbox:checked ~ .quiz__pet-label span::before {
+  -webkit-transform: translateX(38px);
+      -ms-transform: translateX(38px);
+          transform: translateX(38px);
+}
+
+.quiz__pet-input-checkbox ~ .quiz__pet-label svg:first-child path {
+  fill: black;
+  stroke: black;
+}
+
+.quiz__pet-input-checkbox:checked ~ .quiz__pet-label svg:first-child path {
+  fill: #bdbdbd;
+  stroke: #bdbdbd;
+}
+
+.quiz__pet-input-checkbox ~ .quiz__pet-label svg:last-child path {
+  fill: #bdbdbd;
+  stroke: #bdbdbd;
+}
+
+.quiz__pet-input-checkbox:checked ~ .quiz__pet-label svg:last-child path {
+  fill: black;
+  stroke: black;
+}
+
+.quiz__checkbox-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.quiz__checkbox-label {
+  height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quiz__checkbox-label span:last-child {
+  font-family: "Futura PT Book", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 130%;
+  color: #000000;
+}
+
+.quiz__checkbox-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  margin-right: 20px;
+  background: #ffffff;
+  border: 1px solid #828282;
+  cursor: pointer;
+}
+
+.quiz__checkbox-box svg {
+  opacity: 0;
+}
+
+.quiz__checkbox-input {
+  display: none;
+}
+
+.quiz__checkbox-input:checked + .quiz__checkbox-box svg {
+  opacity: 1;
+}
+
+.quiz__btn-sub {
+  background-color: #000000;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  width: 310px;
+  height: 63px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: -31.5px;
+  left: calc(50% - 155px);
+}
+/*# sourceMappingURL=style.css.map */
