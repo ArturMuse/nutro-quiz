@@ -1,17 +1,17 @@
-const quizForm = document.querySelector(".quiz__form")
-const quizInputName = document.querySelector(".js-quiz-name")
-const quizInputSubname = document.querySelector(".js-quiz-subname")
-const quizInputTel = document.querySelector(".js-quiz-tel")
-const quizInputEmail = document.querySelector(".js-quiz-email")
-const quizInputPet = document.querySelector(".js-quiz-pet")
-const quizInputCheckbox = document.querySelectorAll(".js-quiz-checkbox")
-const quizBtnSubmit = document.querySelector(".js-quiz-sub")
+// const quizForm = document.querySelector(".quiz__form")
+// const quizInputName = document.querySelector(".js-quiz-name")
+// const quizInputSubname = document.querySelector(".js-quiz-subname")
+// const quizInputTel = document.querySelector(".js-quiz-tel")
+// const quizInputEmail = document.querySelector(".js-quiz-email")
+// const quizInputPet = document.querySelector(".js-quiz-pet")
+// const quizInputCheckbox = document.querySelectorAll(".js-quiz-checkbox")
+// const quizBtnSubmit = document.querySelector(".js-quiz-sub")
 
-quizBtnSubmit.addEventListener("click", (e) => {
-    e.preventDefault()
-    // console.log(quizInputName.value, quizInputSubname.value, quizInputTel.value, quizInputEmail.value, quizInputPet.checked, quizInputCheckbox)
-    quizForm.style.display = "none"
-})
+// quizBtnSubmit.addEventListener("click", (e) => {
+//     e.preventDefault()
+//     // console.log(quizInputName.value, quizInputSubname.value, quizInputTel.value, quizInputEmail.value, quizInputPet.checked, quizInputCheckbox)
+//     quizForm.style.display = "none"
+// })
 
 // ОТПЕЧАТОК
 
