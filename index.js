@@ -88,29 +88,16 @@ quizItems.forEach((el, index) => {
 
 quizBtn.addEventListener("click", () => {
     if (btnStage === 0) {
-        if (stage === 2) {
-            quizItems.forEach(el => {
+        quizItems.forEach(el => {
+            if (el.dataset.rule === "true") {
+                el.classList.add("quiz__box-item-y")
+            } else {
                 if (el.classList.contains("quiz__box-item-sel")) {
-                    if (el.dataset.rule === "true") {
-                        el.classList.add("quiz__box-item-y")
-                    } else {
-                        el.classList.add("quiz__box-item-n")
-                    }
-                    el.style.pointerEvents = "none"
+                    el.classList.add("quiz__box-item-n")
                 }
-            })
-        } else {
-            quizItems.forEach(el => {
-                if (el.classList.contains("quiz__box-item-sel")) {
-                    if (el.dataset.rule === "true") {
-                        el.classList.add("quiz__box-item-y")
-                    } else {
-                        el.classList.add("quiz__box-item-n")
-                    }
-                }
-                el.style.pointerEvents = "none"
-            })
-        }
+            }
+            el.style.pointerEvents = "none"
+        })
         quizBtn.innerHTML = "Дальше"
         btnStage = 1
         stage += 1
@@ -137,7 +124,11 @@ quizBtn.addEventListener("click", () => {
             quizResult.classList.add("quiz__result-on")
             connect()
         }
-        quizItems.forEach(el => el.style.pointerEvents = "auto")
+        quizItems.forEach(el => {
+            el.style.pointerEvents = "auto"
+            el.classList.remove("quiz__box-item-n")
+            el.classList.remove("quiz__box-item-y")
+        })
         quizBtn.innerHTML = "Ответить"
         btnStage = 0
     }
